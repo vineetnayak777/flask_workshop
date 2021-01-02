@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout Page</title>
+    {% endblock %}
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home">Flask</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <li class="nav-item dropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="home">Home</a>
+                <a class="dropdown-item" href="about">About us</a>
+                <a class="dropdown-item" href="add_orders">Add Orders</a>
+                <a class="dropdown-item" href="view_orders">View Orders</a>
+                </div>
+            </li>
+        </div>
+    </nav>
+    {% block body %}
+    {% endblock %}
+    <footer style="background-color: #212121; text-align: center; margin-top: 14%;">
+        <p style="color: white; padding: 15px 0 ;">Made with ❤ by Vineet Nayak S</p>
+    </footer>
+</body>
+</html>
