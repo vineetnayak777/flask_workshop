@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1 style="text-align: center; font-size: 25px; margin-top: 10%">Orders</h1>
+    
+    <form style="text-align: center; margin-top: 6%;" action='/add_orders_button' method="POST">
+        <div style="padding: 10px 0;">
+            <input style="background-color: #d3d1d1; padding: 10px 20px;" type="text" name="Order_id" placeholder="Enter Orders_id">
+        </div>
+        <div style="padding: 10px 0;">
+            <input style="background-color: #d3d1d1; padding: 10px 20px;" type="text" name="Customer_Name" placeholder="Enter Customer_Name">
+        </div>
+        <div style="padding: 10px 0;">
+            <input style="background-color: #d3d1d1; padding: 10px 20px;" type="text" name="Phone" placeholder="Enter Phone">
+        </div>
+
+        <button style="margin-top: 30px;" type="submit" value="Submit">Submit</button>
+    </form>
+{% endblock %}
